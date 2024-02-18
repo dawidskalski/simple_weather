@@ -6,7 +6,10 @@ import 'package:simple_weather/domain/repositories/weather_repository.dart';
 part 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
-  HomeCubit(this._weatherRepository) : super(const HomeState());
+  HomeCubit(this._weatherRepository)
+      : super(const HomeState(
+          status: Status.loading,
+        ));
 
   final WeatherRepository _weatherRepository;
 

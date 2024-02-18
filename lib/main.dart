@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Weather App',
       theme: ThemeData(
         primarySwatch: Colors.orange,
+        useMaterial3: false,
       ),
       home: const HomePage(),
     );
